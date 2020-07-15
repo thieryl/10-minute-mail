@@ -6,7 +6,8 @@
 This is a command-line python client which generates an email address that lasts 10 minutes. It is not traceable back to you. It is a wrapper on the WebSocket endpoint exposed by this [disposable e-mail service](https://dropmail.me/en/).
 
 # *PYTHON 3*
-## _Mac OSx_
+
+`pip install websocket-client`
 
 `python3 10minmail.py`
 
