@@ -4,6 +4,9 @@
 #https://github.com/liris/websocket-client
 ## sudo pip install --user websocket-client
 import sys
+from json import loads
+from subprocess import call
+from datetime import datetime
 from websocket import create_connection
 
 class mailbox(object):
@@ -17,12 +20,6 @@ class mailbox(object):
 		self.next()
 
 def main(box):
-	#stdlib
-	import sys
-	from json import loads
-	from subprocess import call
-	from datetime import datetime
-	
 	call(["echo '{0}' | pbcopy".format(box.email)], shell=True)
 	print (box.email+" was copied to clipboard")
 	while True:
