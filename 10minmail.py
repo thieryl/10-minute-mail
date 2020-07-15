@@ -3,6 +3,7 @@
 
 #https://github.com/liris/websocket-client
 ## sudo pip install --user websocket-client
+import sys
 from websocket import create_connection
 
 class mailbox(object):
